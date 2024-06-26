@@ -1,0 +1,24 @@
+.root {
+  width: 100%;
+  max-width: 180px;
+  border-radius: 30px;
+  border: 1px solid #847f7f;
+  padding-inline: 15px;
+  padding-block: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  transition: transform ease 300ms;
+  cursor: pointer;
+  background: var(--mantine-color-white);
+
+  &:where([data-copied='true']) {
+    background-color: #66ca66;
+    color: var(--mantine-color-white);
+    border-color: var(--mantine-color-white);
+  }
+
+  @mixin hover {
+    transform: scale(1.05);
+  }
+}

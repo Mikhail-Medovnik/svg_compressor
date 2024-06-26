@@ -7,4 +7,13 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'import/extensions': 'off',
   },
+
+  overrides: [
+    {
+      files: ['**/worker.ts'],
+      rules: {
+        'no-restricted-globals': 'off',
+      },
+    },
+  ],
 };

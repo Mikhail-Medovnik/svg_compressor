@@ -1,9 +1,10 @@
-import React from 'react'
+import { Container } from '@mantine/core';
+import { DropZone } from './DropZone/DropZone';
 
-function SvgCompressor() {
+export function SvgCompressor() {
   return (
-    <div>SvgCompressor</div>
-  )
+    <Container size={1440} pb={40} pt={40}>
+      <DropZone />
+    </Container>
+  );
 }
-
-export default SvgCompressor
