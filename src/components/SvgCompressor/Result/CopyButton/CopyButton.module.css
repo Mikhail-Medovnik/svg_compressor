@@ -11,9 +11,15 @@
   transition: transform ease 300ms;
   cursor: pointer;
   background: var(--mantine-color-white);
+  box-shadow: 6px 5px 8px -1px #969292;
+  background-color: #f7cea6;
+
+  @media (max-width: 48em) {
+    margin: 0 auto;
+  }
 
   &:where([data-copied='true']) {
-    background-color: #66ca66;
+    background-color: #76d076;
     color: var(--mantine-color-white);
     border-color: var(--mantine-color-white);
   }

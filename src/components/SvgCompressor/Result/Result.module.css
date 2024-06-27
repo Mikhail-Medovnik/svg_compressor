@@ -1,6 +1,11 @@
 .root {
   display: flex;
   gap: 40px;
+
+  @media (max-width: 48em) {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .column {
@@ -11,11 +16,19 @@
   &:where([data-column='image']) {
     width: 100%;
     max-width: 33%;
+
+    @media (max-width: 48em) {
+      max-width: 100%;
+    }
   }
 
   &:where([data-column='markup']) {
     width: 100%;
     max-width: 67%;
+
+    @media (max-width: 48em) {
+      max-width: 100%;
+    }
   }
 }
 
@@ -48,7 +61,13 @@
   text-align: center;
   text-decoration: none;
   color: #000;
+  background-color: #cabef1;
+  box-shadow: 6px 5px 8px -1px #969292;
   transition: transform ease 300ms;
+
+  @media (max-width: 48em) {
+    margin: 0 auto;
+  }
 
   @mixin hover {
     transform: scale(1.05);
